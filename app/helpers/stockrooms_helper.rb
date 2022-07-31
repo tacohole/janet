@@ -1,0 +1,2 @@
+module StockroomsHelper
+end

@@ -1,0 +1,2 @@
+class StockroomsController < ApplicationController
+end
