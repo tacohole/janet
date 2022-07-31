@@ -24,6 +24,8 @@ default: &default
 development:
   <<: *default
   database: janet_development
+  adapter: postgresql
+  url: <%= ENV["DATABASE_URL"] %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -82,5 +84,4 @@ test:
 production:
   <<: *default
   database: janet_production
-  username: janet
-  password: <%= ENV["JANET_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
