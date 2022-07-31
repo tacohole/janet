@@ -1,7 +1,6 @@
 class CreateVendorItems < ActiveRecord::Migration[7.0]
   def change
-    create_table :vendor_items do |t|
-      t.uuid :id
+    create_table :vendor_items, id: :uuid do |t|
       t.uuid :item_id
       t.uuid :vendor_id
       t.integer :quantity

@@ -1,7 +1,6 @@
 class CreateLists < ActiveRecord::Migration[7.0]
   def change
-    create_table :lists do |t|
-      t.uuid :id
+    create_table :lists, id: :uuid do |t|
       t.string :name
       t.string :type
       t.uuid :item_id
