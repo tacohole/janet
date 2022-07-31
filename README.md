@@ -1,24 +1,18 @@
-# README
+# Janet
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+a home inventory management system
 
-Things you may want to cover:
+- System dependencies
 
-* Ruby version
+* Postgres v14
+* Ruby 3.0.4
+* Rails 7
 
-* System dependencies
+- Configuration
+  `gh repo clone tacohole/janet`
+  `cd janet`
+  `bin/setup`
+  `heroku local`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- How to run the test suite
+  `bundle exec rake spec`
