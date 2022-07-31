@@ -1,1 +1,17 @@
-name,description
+name,slug,description,default_shelf_life
+"Produce",produce,,"7 days"
+"Toiletries",toiletries,,"2 years"
+"Dry Goods",dry_goods,,"1 year"
+"Canned Goods",canned_goods,,"2 years"
+"Frozen Foods",frozen_foods,,"6 months"
+"Cleaning Products",cleaning,,
+"Proteins",proteins,,"7 days"
+"Beverages",beverages,,"3 months"
+"Alcohol",alcohol,,"1 year"
+"Pet Products",pet_products,,"1 year"
+"Baked Goods",baked_goods,,"7 days"
+"Dairy and Eggs",dairy_eggs,,"14 days"
+"Condiments",condiments,,"4 months"
+"Supplements",supplements,,"1 year"
+"Snacks",snacks,,"4 weeks"
+"Yard Products",yard,,,

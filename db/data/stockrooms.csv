@@ -1,1 +1,13 @@
-name,description
+name,slug,description
+"Freezer",freezer,
+"Refrigerator",refrigerator,
+"Kitchen Cabinet",kitchen_cabinet,
+"Dining Room Closet",dining_room,
+"Bar Cart",bar_cart,
+"Laundry Room",laundry,
+"Main Bathroom",bathroom1,
+"Guest Bathroom",bathroom2,
+"Main Bedroom Closet",bedroom_closet1,
+"Guest Bedroom Closet",bedroom_closet2,
+"Office Closet",office_closet,
+"Shed",shed,

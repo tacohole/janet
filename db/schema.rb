@@ -17,7 +17,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_31_180726) do
 
   create_table "categories", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.string "name"
+    t.string "slug"
     t.text "description"
+    t.interval "default_shelf_life"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -28,7 +30,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_31_180726) do
     t.text "description"
     t.float "avg_price"
     t.integer "stock_level"
-    t.date "exp_date"
+    t.interval "shelf_life"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -49,6 +51,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_31_180726) do
 
   create_table "stockrooms", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.string "name"
+    t.string "slug"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

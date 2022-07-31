@@ -6,7 +6,7 @@ class CreateItems < ActiveRecord::Migration[7.0]
       t.text :description
       t.float :avg_price
       t.integer :stock_level
-      t.date :exp_date
+      t.interval :shelf_life
 
       t.timestamps
     end

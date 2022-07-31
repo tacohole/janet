@@ -15,7 +15,10 @@ category_csv = CSV.read(category_file_path, headers: true)
 category_csv.each do |row|
   data = {
     name: row[0],
-    description: row[1]
+    slug: row[1],
+    description: row[2],
+    default_shelf_life: row[3]
+
   }
   Category.create(data)
 end
@@ -30,9 +33,8 @@ item_csv.each do |row|
     name: row[0],
     category: row[1],
     description: row[2],
-    avg_price: row[3],
-    stock_level: row[4],
-    exp_date: row[5]
+    stock_level: row[3],
+    shelf_life: row[4]
   }
   Item.create(data)
 end
@@ -45,7 +47,8 @@ stockroom_csv = CSV.read(stockroom_file_path, headers: true)
 stockroom_csv.each do |row|
   data = {
     name: row[0],
-    description: row[1]
+    slug: row[1],
+    description: row[2]
   }
   Stockroom.create(data)
 end
