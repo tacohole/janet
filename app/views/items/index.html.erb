@@ -1,0 +1,17 @@
+<table class="table table-hover">
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Stock Level</th>
+    <th>Shelf Life</th>
+  </tr>
+  <% @items.each_with_index do |item, index| %>
+    <tr>
+      <td><%= index %></td>
+      <td><%= item.name %></td>
+      <td><%= item.description %></td>
+      <td><%= item.stock_level %></td>
+      <td><%= item.shelf_life %></td>
+    </tr>
+  <% end %>
+</table>
